@@ -16,6 +16,8 @@ export default function Postlist(props) {
           imageAlt={p.imageAlt}
           username={p.username}
           userAvatar={p.userAvatar}
+          showUsers={props.showUsers}
+          linkImage={props.linkImage}
         />
       ))}
     </ul>
