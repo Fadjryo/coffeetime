@@ -1,0 +1,42 @@
+export const USERDATA = [
+  {
+    uid: "u1",
+    name: "Fadjriadi",
+    username: "fadjryo",
+    email: "fadjryo@example.com",
+    avatar: "https://i.pravatar.cc/300?img=12",
+    bio: "Love coffee and code",
+  },
+  {
+    uid: "u2",
+    name: "Bob Johnson",
+    username: "bobby",
+    email: "bob@example.com",
+    avatar: "https://i.pravatar.cc/300?img=1",
+    bio: "Traveler & foodie",
+  },
+  {
+    uid: "u3",
+    name: "Carol Lee",
+    username: "carol",
+    email: "carol@example.com",
+    avatar: "https://i.pravatar.cc/300?img=30",
+    bio: "Fitness enthusiast",
+  },
+  {
+    uid: "u4",
+    name: "David Kim",
+    username: "david",
+    email: "david@example.com",
+    avatar: "https://i.pravatar.cc/300?img=8",
+    bio: "Gamer and streamer",
+  },
+  {
+    uid: "u5",
+    name: "Eva Green",
+    username: "eva",
+    email: "eva@example.com",
+    avatar: "https://i.pravatar.cc/300?img=47",
+    bio: "Music is life",
+  },
+];
