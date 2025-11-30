@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@reference "tailwindcss/utilities";
+
+.modalBackdrop {
+  @apply fixed inset-0 bg-black/50 backdrop-blur-sm z-40;
+}
+
+.modalContainer {
+  @apply fixed inset-0 flex items-center justify-center z-50;
+}
+
+.modalBox {
+  @apply relative bg-white rounded-xl shadow-xl p-6 w-full max-w-md;
+  animation: fadeIn 0.2s ease;
+}

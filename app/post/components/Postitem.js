@@ -1,6 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "@/app/elements/Button";
+import {
+  FaRegPaperPlane,
+  FaHeart,
+  FaRegComment,
+  FaBookmark,
+} from "react-icons/fa";
 
 export default function Postitem(props) {
   const mainContent = (
@@ -28,7 +35,34 @@ export default function Postitem(props) {
             mainContent
           )}
         </div>
-        <div>WOULD BE ACTIONS</div>
+        <div className="flex">
+          <Button
+            id="likes"
+            active="text-red-600 font-semibold"
+            display="text-gray-500"
+            children={<FaHeart />}
+          />
+          <Button
+            id="share"
+            href={`/post/${props.pid}`}
+            active="text-red-600 font-semibold"
+            display="text-gray-500"
+            children={<FaRegComment />}
+          />
+          <Button
+            id="comments"
+            href={`/post/${props.pid}`}
+            active="text-red-600 font-semibold"
+            display="text-gray-500"
+            children={<FaRegPaperPlane />}
+          />
+          <Button
+            id="bookmarks"
+            active="text-yellow-600 font-semibold"
+            display="text-gray-500"
+            children={<FaBookmark />}
+          />
+        </div>
         <div>
           <p>{props.content}</p>
         </div>
