@@ -4,6 +4,7 @@ import Postlist from "@/app/post/components/Postlist";
 import { mergePostswithUsers } from "@/app/lib/Merge";
 import { USERDATA } from "@/app/Utils/Userdata";
 import "../../modal.modules.css";
+import Backdrop from "@/app/elements/Backdrop";
 
 export default async function singlePost({ params }) {
   const { postId } = await params;
@@ -13,7 +14,7 @@ export default async function singlePost({ params }) {
 
   return (
     <>
-      <div className="modalBackdrop">
+      <Backdrop>
         <dialog className="modalContainer" open>
           <Postlist
             posts={userPostswithDetails}
@@ -22,7 +23,7 @@ export default async function singlePost({ params }) {
             className="modalBox"
           />
         </dialog>
-      </div>
+      </Backdrop>
     </>
   );
 }
